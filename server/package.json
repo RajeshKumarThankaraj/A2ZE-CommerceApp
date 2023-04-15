@@ -1,0 +1,44 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "concurrently \"env-cmd -f ./.env.dev nodemon client.server.js\" \"env-cmd -f ./.env.dev nodemon admin.server.js\"",
+    "client-server": "env-cmd -f ./.env.dev nodemon client.server.js",
+    "admin-server": "env-cmd -f ./.env.dev nodemon admin.server.js"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "axios": "^1.2.2",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "concurrently": "^7.6.0",
+    "connect-history-api-fallback": "^2.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "env-cmd": "^10.1.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "redis": "^4.6.3",
+    "uuid": "^9.0.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "products": {
+        "addProductCategory": {
+            "dbModel": "productCategory"
+        },
+        "addProduct": {
+            "dbModel": "product"
+        }
+    }
+}
